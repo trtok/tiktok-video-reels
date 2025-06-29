@@ -9,14 +9,14 @@
 </head>
 <body>
     <div class="mobile-app">
-        <!-- TikTok -->
+        <!-- سەرەوەی ئەپ -->
         <header class="app-header">
             <div class="header-left">
                 <button class="icon-btn">
                     <i class="fas fa-live"></i>
                 </button>
             </div>
-            <div class="logo">TikTok </div>
+            <div class="logo">تیکتۆک</div>
             <div class="header-right">
                 <button class="icon-btn search-btn">
                     <i class="fas fa-search"></i>
@@ -27,76 +27,31 @@
             </div>
         </header>
 
+        <!-- تەبەکەکانی سەرەوە -->
+        <div class="explore-tabs">
+            <span class="tab active">پێشنیارکراو</span>
+            <span class="tab">بەدواداچوون</span>
+            <span class="tab">بۆ تۆ</span>
+        </div>
+
         <!-- ناوەڕۆکی سەرەکی -->
         <main class="image-feed">
             <!-- وێنەی 1 -->
             <div class="image-container">
-                <div class="image-info-header">
-                    <div class="user-info">
-                        <div class="user-avatar">
-                            <img src="https://via.placeholder.com/150" alt="بەکارهێنەر">
-                        </div>
-                        <div class="user-details">
-                            <span class="username">@kurdish_garmayn</span>
-                            <span class="image-desc">مەلەفی بەرپرسەکان</span>
-                        </div>
+                <div class="user-info-header">
+                    <div class="user-avatar">
+                        <img src="https://via.placeholder.com/40" alt="بەکارهێنەر">
                     </div>
-                    <button class="follow-btn">Follow</button>
-                </div>
-                
-                <div class="image-wrapper">
-                    <a href="https://www.youtube.com" target="_blank">
-                        <img src="https://www.atmap.com.au/images/pro@Map.JPG" alt="وێنەی کوردی" class="post-image">
-                    </a>
-                </div>
-                
-                <div class="image-actions">
-                    <div class="action-column">
-                        <button class="action-btn like-btn">
-                            <i class="far fa-heart"></i>
-                            <span class="count">12.5K</span>
-                        </button>
-                        <button class="action-btn comment-btn">
-                            <i class="far fa-comment"></i>
-                            <span class="count">1.2K</span>
-                        </button>
-                        <button class="action-btn share-btn">
-                            <i class="fas fa-share"></i>
-                        </button>
-                        <button class="action-btn music-btn">
-                            <div class="music-icon">
-                                <i class="fas fa-music"></i>
-                            </div>
-                        </button>
-                    </div>
-                    <div class="music-info">
-                        <div class="music-wave">
-                            <span></span><span></span><span></span><span></span><span></span>
-                        </div>
-                        <span class="music-name">ئەزموونی ڕەسەن - کوردی</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- وێنەی 2 -->
-            <div class="image-container">
-                <div class="image-info-header">
-                    <div class="user-info">
-                        <div class="user-avatar">
-                            <img src="https://via.placeholder.com/150" alt="بەکارهێنەر">
-                        </div>
-                        <div class="user-details">
-                            <span class="username">@another_user</span>
-                            <span class="image-desc">وێنەیەکی تر</span>
-                        </div>
+                    <div class="user-details">
+                        <span class="username">@nanuka_stambolishvii</span>
+                        <span class="translation">See translation</span>
+                        <span class="music-info">♪ Dame Un Grrr - <span class="contains">☐ Contains:</span></span>
                     </div>
                     <button class="follow-btn">بەشداربوون</button>
                 </div>
                 
                 <div class="image-wrapper">
-                    <a href="https://www.youtube.com" target="_blank">
-                        <img src="https://example.com/images/another_image.jpg" alt="وێنەی تر" class="post-image">
-                    </a>
+                    <img src="https://www.atmap.com.au/images/pro@Map.JPG" alt="وێنەی کوردی" class="post-image">
                 </div>
                 
                 <div class="image-actions">
@@ -109,20 +64,6 @@
                             <i class="far fa-comment"></i>
                             <span class="count">542</span>
                         </button>
-                        <button class="action-btn share-btn">
-                            <i class="fas fa-share"></i>
-                        </button>
-                        <button class="action-btn music-btn">
-                            <div class="music-icon">
-                                <i class="fas fa-music"></i>
-                            </div>
-                        </button>
-                    </div>
-                    <div class="music-info">
-                        <div class="music-wave">
-                            <span></span><span></span><span></span><span></span><span></span>
-                        </div>
-                        <span class="music-name">میوزیکی تر - کوردی</span>
                     </div>
                 </div>
             </div>
@@ -131,22 +72,11 @@
         <!-- پێڕستی خوارەوە -->
         <nav class="bottom-nav">
             <a href="#" class="nav-item active"><i class="fas fa-home"></i></a>
-            <a href="#" class="nav-item"><i class="fas fa-compass"></i></a>
+            <a href="#" class="nav-item"><i class="fas fa-user-friends"></i></a>
             <a href="#" class="nav-item add-video"><i class="fas fa-plus"></i></a>
-            <a href="#" class="nav-item"><i class="fas fa-comment-dots"></i></a>
+            <a href="#" class="nav-item"><i class="fas fa-inbox"></i></a>
             <a href="#" class="nav-item"><i class="fas fa-user"></i></a>
         </nav>
-        
-        <!-- پەنجەرەی گەڕان -->
-        <div class="search-overlay">
-            <div class="search-header">
-                <button class="back-btn"><i class="fas fa-arrow-left"></i></button>
-                <div class="search-input">
-                    <input type="text" placeholder="گەڕان لە تیکتۆک...">
-                </div>
-            </div>
-            <div class="search-results"></div>
-        </div>
     </div>
 
     <script src="script.js"></script>
