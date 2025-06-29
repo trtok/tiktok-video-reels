@@ -23,11 +23,32 @@ body {
     max-width: 100vw;
     height: 100vh;
     overflow: hidden;
+    position: relative;
+}
+
+/* تەبەکەکانی سەرەوە */
+.explore-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.tab {
+    color: var(--light-text);
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.tab.active {
+    color: var(--dark-text);
+    font-weight: bold;
 }
 
 /* وێنە */
 .image-feed {
-    height: calc(100vh - 50px - var(--nav-height));
+    height: calc(100vh - 120px);
     overflow-y: scroll;
 }
 
@@ -38,15 +59,57 @@ body {
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.image-wrapper a {
-    display: block;
-    width: 100%;
-    height: 70vh;
+.user-info-header {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+}
+
+.user-avatar img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.user-details {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.username {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.translation {
+    color: var(--secondary-color);
+    font-size: 12px;
+}
+
+.music-info {
+    font-size: 12px;
+    color: var(--light-text);
+}
+
+.contains {
+    color: var(--secondary-color);
+}
+
+.follow-btn {
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 5px 12px;
+    border-radius: 4px;
+    font-size: 12px;
 }
 
 .post-image {
     width: 100%;
-    height: 100%;
+    height: 70vh;
     object-fit: cover;
 }
 
@@ -67,6 +130,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-size: 12px;
 }
 
 .action-btn i {
@@ -74,6 +138,35 @@ body {
     margin-bottom: 5px;
 }
 
-.like-btn.active i {
+/* پێڕستی خوارەوە */
+.bottom-nav {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+    background-color: var(--dark-bg);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.nav-item {
+    color: var(--light-text);
+    font-size: 20px;
+}
+
+.nav-item.active {
     color: var(--primary-color);
+}
+
+.add-video {
+    color: white;
+    background: var(--primary-color);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -20px;
 }
